@@ -5,11 +5,11 @@ class Game(object):
 
     def __init__(self, name):
         self.name = name
-
+    #静态方法
     @staticmethod
     def show_help():
         print('***')
-
+    #类方法
     @classmethod
     def show_top_score(cls):
         print(cls.top_score)
