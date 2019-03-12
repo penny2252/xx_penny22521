@@ -1,0 +1,8 @@
+file1=open('readme')
+file2=open('readme_1','w')
+file2.write(file1.read())
+file1.close()
+file2.close()
+file3=open('readme_1')
+print(file3.read())
+file3.close()

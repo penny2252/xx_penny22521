@@ -1,0 +1,14 @@
+#1、打开文件
+file=open('readme')
+#2、读取文件
+#第一次打开文件时文件指针在文件的开始位置，读取后文件指针移动到文件末尾
+text=file.read()
+print(text)
+print(len(text))
+print('-'*50)
+#再次读取将读取不到文件内容
+txt=file.read()
+print(txt)
+print(len(txt))
+#3、关闭文件
+file.close()
